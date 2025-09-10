@@ -26,5 +26,14 @@ namespace Nomina
         {
 
         }
+
+        private void abrirArchivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string archivo = openFileDialog1.FileName;
+                MessageBox.Show("archivo Seleccionado: " + archivo);
+            }
+        }
     }
 }
